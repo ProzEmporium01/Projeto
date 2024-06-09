@@ -1,0 +1,98 @@
+/*454249*/
+/*#d8b485*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+header{
+    background-color: #454249;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+body{
+    background-image: url(images/rainbowwall.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #454249;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    background-color: #181818;
+    color:#d8b485 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+
+    }
+
+
+.menu_header{
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 18px;
+
+}
+
+.menu_header_itens {
+    color: #ffffff;
+    margin: 30px;
+
+
+}
+
+.menu_header_itens:hover{
+    font-size: 22px;
+}
+
+#logo {
+    height: 80px;
+}
+
+.corpo{
+    background-color:rgba(255,255,255,0.8);
+    width: 80%;
+    padding: 20px;
+    margin: 8px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer_texto {
+    color: #d8b485;
+    margin: 30px;
+}
+
+
+
