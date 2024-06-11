@@ -12,8 +12,11 @@ header{
     background-color: #454249;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
     justify-content: space-around;
-    align-items: center;
 }
 
 
@@ -23,6 +26,7 @@ body{
     background-size: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #454249;
+    font-weight: 500;
 
 }
 
@@ -30,6 +34,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 90px;
+    margin-bottom: 56px;
 }
 
 footer{
@@ -38,10 +44,10 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    height: 60px;
+    height: 34px;
     align-items: center;
 
     }
@@ -51,8 +57,8 @@ footer{
     color: #ffffff;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 18px;
+    justify-content: space-evenly;
+    font-size: 16px;
 
 }
 
@@ -64,11 +70,16 @@ footer{
 }
 
 .menu_header_itens:hover{
-    font-size: 22px;
+    color: #d8b485;
+    text-shadow: 5px 5px 10px #000000 ;
 }
 
 #logo {
-    height: 80px;
+    width: 140px;
+}
+
+.logo{
+    width: 320px;
 }
 
 .corpo{
@@ -80,8 +91,9 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    min-width: 380px;
 }
+
 .texto{
     display: flex;
     flex-direction: column;
@@ -92,7 +104,56 @@ footer{
 .footer_texto {
     color: #d8b485;
     margin: 30px;
+    font-size: 12px;
+}
+ .form_login{
+    
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+ }
+  .cadastre{
+    color: #ff0066;
+    font-weight: 800;
+  }
+
+ .form_card{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7) ;
+    border-style: none;
+    margin-top: 50px;
+
+ }
+
+ .logo_slim{
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7) ;
+ }
+ .galery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
+.corpo_galery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
-
+.card_galery {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    border-style: none;
+    margin: 10px;
+    width: 330px;
+    height: 600px;
+}
