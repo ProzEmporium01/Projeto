@@ -14,6 +14,7 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 
@@ -21,7 +22,7 @@ body{
     background-image: url(images/rainbowwall.jpg);
     background-repeat: repeat;
     background-size: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     color: #454249;
 
 }
@@ -30,6 +31,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20%;
 }
 
 footer{
@@ -38,29 +40,30 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    height: 60px;
     align-items: center;
-
     }
 
 
-.menu_header{
-    color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 18px;
-
+.menu_header {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
-
+    
+.menu_header li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.menu_header li:last-child {
+    margin-right: 0;
+}
+    
 .menu_header_itens {
     color: #ffffff;
     margin: 30px;
-
-
 }
 
 .menu_header_itens:hover{
@@ -70,18 +73,15 @@ footer{
 #logo {
     height: 80px;
 }
-
 .corpo{
-    background-color:rgba(255,255,255,0.8);
-    width: 80%;
-    padding: 20px;
-    margin: 8px;
+    background-color: #fff;
+    width: 100%;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
 }
+
+
 .texto{
     display: flex;
     flex-direction: column;
@@ -95,4 +95,60 @@ footer{
 }
 
 
+.corpo img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
 
+.texto {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+textarea{
+    display: block;
+    margin-bottom: 30px;
+    width: 300px;
+}
