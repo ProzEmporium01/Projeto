@@ -83,7 +83,7 @@ footer{
 }
 
 .corpo{
-    background-color:rgba(255, 255, 255, 0.8);
+    background-color:rgba(249, 207, 143, 0.8);
     width: 80%;
     padding: 20px;
     margin: 8px;
@@ -155,7 +155,7 @@ footer{
     border-style: none;
     margin: 10px;
     width: 330px;
-    height: 600px;
+    height: 600px
 }
 
 
