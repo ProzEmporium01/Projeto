@@ -84,7 +84,7 @@ footer{
 
 .corpo{
     background-color:rgba(255,255,255,0.8);
-    width: 80%;
+    width: 86%;
     padding: 20px;
     margin: 8px;
     border-radius: 10px;
@@ -145,6 +145,7 @@ footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
 }
 
 .card_galery {
@@ -156,4 +157,9 @@ footer{
     margin: 10px;
     width: 330px;
     height: 600px;
+}
+.minha_imagem{
+    width:100%;
+    height: auto;
+    border-radius: 10px;
 }
