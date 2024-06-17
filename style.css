@@ -190,3 +190,13 @@ footer{
     border-style: none;
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
 }
+
+.form_inputs {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#enviar_contato {
+    padding-top:20px;
+}

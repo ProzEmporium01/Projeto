@@ -26,13 +26,45 @@
                 <img class="logo_slim" src="images/emporium-slim.jpg" alt="Logo Emporium">
             </div>
             <div class="texto">
-                <h1> Contato</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi maiores quae natus nostrum culpa, enim similique, fugiat ad sed nobis quos et dolor. Dolorum voluptas odit nulla autem. Dolorem.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi maiores quae natus nostrum culpa, enim similique, fugiat ad sed nobis quos et dolor. Dolorum voluptas odit nulla autem. Dolorem.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi maiores quae natus nostrum culpa, enim similique, fugiat ad sed nobis quos et dolor. Dolorum voluptas odit nulla autem. Dolorem.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi maiores quae natus nostrum culpa, enim similique, fugiat ad sed nobis quos et dolor. Dolorum voluptas odit nulla autem. Dolorem.
-                </p>
-
+                <h1> Contato </h1>
+                <form action="">
+                    <div class="form_inputs">
+                        <label for="nome"> Nome:</label>
+                        <input type="text" name="nome"  id="nome" placeholder="Digite seu nome...">
+                    </div>
+                    <div class="form_inputs">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email...">
+                    </div>
+                    <div class="form_inputs">
+                        <label for="watsapp">Watsapp:</label>
+                        <input type="tel" name="watsapp" id="watsapp" placeholder="Seu numero do Whatsapp...">
+                    </div>
+                    <div class="form_inputs">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="Seu numero de telefone...">
+                    </div>
+                    <div class="form_inputs">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" rows="5" cols="50" placeholder="Digite uma mensagem..."></textarea>
+                    </div>
+                    
+                    <section>
+                        <div style="padding: 10px;">
+                            <p>Melhor contato</p>
+                            <input type="radio" name="contact" id="whatsapp"
+                            value="watsapp">
+                            <label for="brasil">Whatsapp</label>
+                            <input type="radio" name="contact" id="telefone"
+                            value="telefone">
+                            <label for="brasil">Telefone</label>
+                            <input type="radio" name="contact" id="email"
+                            value="email">
+                            <label for="brasil">Email</label>
+                            <div id="enviar_contato"><button type="submit">Enviar</button></div>
+                        </div>
+                    </section>
+                </form>
             </div>
         </div>
     </main>
