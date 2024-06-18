@@ -25,14 +25,48 @@
             <div>
                 <img class="logo_slim" src="images/emporium-slim.jpg" alt="Logo Emporium">
             </div>
+            <div class="form_card">
             <div class="texto">
                 <h1> Cadastro </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi maiores quae natus nostrum culpa, enim similique, fugiat ad sed nobis quos et dolor. Dolorum voluptas odit nulla autem. Dolorem.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi maiores quae natus nostrum culpa, enim similique, fugiat ad sed nobis quos et dolor. Dolorum voluptas odit nulla autem. Dolorem.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi maiores quae natus nostrum culpa, enim similique, fugiat ad sed nobis quos et dolor. Dolorum voluptas odit nulla autem. Dolorem.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi maiores quae natus nostrum culpa, enim similique, fugiat ad sed nobis quos et dolor. Dolorum voluptas odit nulla autem. Dolorem.
-                </p>
-
+                <form action="">
+                    <div class="form_inputs">
+                        <label for="nome"> Nome:</label>
+                        <input type="text" name="nome"  id="nome" placeholder="Digite seu nome...">
+                    </div>
+                    <div class="form_inputs">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email...">
+                    </div>
+                    <div class="form_inputs">
+                        <label for="watsapp">CPF:</label>
+                        <input type="tel" name="watsapp" id="watsapp" placeholder="Seu numero do Whatsapp...">
+                    </div>
+                    <div class="form_inputs">
+                        <label for="telefone">Data de Nascimeto:</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="Seu numero de telefone...">
+                    </div>
+                    <div class="form_inputs">
+                        <label for="mensagem">Endereço:</label>
+                        <textarea name="mensagem" id="mensagem" rows="2" cols="34" placeholder="Digite uma mensagem..."></textarea>
+                    </div>
+                    
+                    <section>
+                        <div style="padding: 10px;">
+                            
+                            <input type="radio" name="contact" id="whatsapp"
+                            value="watsapp">
+                            <label for="brasil">Pessoa Júridica</label>
+                            <input type="radio" name="contact" id="telefone"
+                            value="telefone">
+                            <label for="brasil">Pessoa Física</label>
+                            
+                            <div id="enviar_contato">
+                                <button class="enviar" type="submit">Cadastre-se</button>
+                            </div>
+                        </div>
+                    </section>
+                </form>
+            </div>
             </div>
         </div>
     </main>

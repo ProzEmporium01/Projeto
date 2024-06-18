@@ -16,11 +16,13 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
+    align-items: baseline;
     justify-content: space-around;
 }
 
 
 body{
+    background-attachment: fixed;
     background-image: url(images/rainbowwall.jpg);
     background-repeat: repeat;
     background-size: 100%;
@@ -34,7 +36,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 70px;
     margin-bottom: 56px;
 }
 
@@ -57,7 +59,6 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 1px;
 }
 
 .menu_header_itens {
@@ -67,7 +68,6 @@ footer{
 
 .menu_header_itens:hover{
     color: #d8b485;
-    text-shadow: 5px 5px 10px #000000 ;
 }
 
 #logo {
@@ -82,12 +82,13 @@ footer{
     background-color:rgba(255,255,255,0.8);
     width: 86%;
     padding: 20px;
-    margin: 8px;
+    margin: 2px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-width: 380px;
+    min-height: 700px;
 }
 
 .texto{
@@ -124,9 +125,9 @@ footer{
     border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7) ;
     border-style: none;
-    margin-top: 50px;
-
- }
+    margin-top: 20px;
+    min-width: 360px;
+}
 
 .logo_slim{
     width: 300px;
@@ -144,17 +145,26 @@ footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .card_galery {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 0px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
     border-style: none;
-    margin: 10px;
+    margin: 20px;
     width: 330px;
     height: 600px;
+}
+
+.card_titulo {
+    margin: 20px;
+}
+
+.card_texto {
+    padding: 20Px;
 }
 
 .card_sobre {
@@ -173,7 +183,8 @@ footer{
 .cafe_imagem{
     width:100%;
     height: auto;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .minha_imagem{
