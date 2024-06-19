@@ -96,6 +96,15 @@ footer{
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    min-width: 50%;
+    max-width: 300px;
+}
+
+.texto_tipos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 .footer_texto {
@@ -170,14 +179,15 @@ footer{
 .card_sobre {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
     border-style: none;
     margin: 10px;
-    width: 800px;
-    height: auto;
+    width: 100%;
+    max-width: 600px;
 }
 
 .cafe_imagem{
@@ -188,8 +198,8 @@ footer{
 }
 
 .minha_imagem{
-    height:260px;
-    width: auto;
+    width: 100%;
+    max-width: 260px;
     border-radius: 10px;
 }
 
@@ -210,4 +220,10 @@ footer{
 
 #enviar_contato {
     padding-top:20px;
+}
+.xicara{
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.7);
+    width: 100%; 
+    max-width: 600px;
 }
