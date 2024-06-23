@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <title>EMPORIUM</title>
 </head>
 <body>
@@ -13,8 +14,8 @@
             <li class="menu_header">
                 <ol><a class="menu_header_itens" href="index.html">Inicio</a></ol>
                 <ol><a class="menu_header_itens" href="tipos.html">Tipos</a></ol>
+                <ol><a class="menu_header_itens" href="sobre.html">Sobre</a></ol>
                 <ol><a class="menu_header_itens" href="contato.html">Contato</a></ol>
-                <ol><a class="menu_header_itens"href="sobre.html">Sobre</a></ol>
                 <ol><a class="menu_header_itens" href="login.html">Login</a></ol>
             </li>
         </div>
@@ -25,14 +26,48 @@
             <div>
                 <img class="logo_slim" src="images/emporium-slim.jpg" alt="Logo Emporium">
             </div>
+            <div class="form_card">
             <div class="texto">
                 <h1> Cadastro </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi maiores quae natus nostrum culpa, enim similique, fugiat ad sed nobis quos et dolor. Dolorum voluptas odit nulla autem. Dolorem.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi maiores quae natus nostrum culpa, enim similique, fugiat ad sed nobis quos et dolor. Dolorum voluptas odit nulla autem. Dolorem.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi maiores quae natus nostrum culpa, enim similique, fugiat ad sed nobis quos et dolor. Dolorum voluptas odit nulla autem. Dolorem.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi maiores quae natus nostrum culpa, enim similique, fugiat ad sed nobis quos et dolor. Dolorum voluptas odit nulla autem. Dolorem.
-                </p>
-
+                <form action="">
+                    <div class="form_inputs">
+                        <label for="nome"> Nome:</label>
+                        <input type="text" name="nome"  id="nome" placeholder="Digite seu nome...">
+                    </div>
+                    <div class="form_inputs">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email...">
+                    </div>
+                    <div class="form_inputs">
+                        <label for="watsapp">CPF:</label>
+                        <input type="tel" name="CPF" id="CPF" placeholder="Digite o CPF...">
+                    </div>
+                    <div class="form_inputs">
+                        <label for="telefone">Data de Nascimeto:</label>
+                        <input type="data" name="data de nascimento" id="data de nascimento" placeholder="Digite Data de Nascimento...">
+                    </div>
+                    <div class="form_inputs">
+                        <label for="mensagem">Endereço:</label>
+                        <textarea name="Endereço" id="Endereço" rows="2" cols="34" placeholder="Digite seu Endereço..."></textarea>
+                    </div>
+                    
+                    <section>
+                        <div style="padding: 10px;">
+                            
+                            <input type="radio" name="contact" id="whatsapp"
+                            value="watsapp">
+                            <label for="brasil">Pessoa Júridica</label>
+                            <input type="radio" name="contact" id="telefone"
+                            value="telefone">
+                            <label for="brasil">Pessoa Física</label>
+                            
+                            <div id="enviar_contato">
+                                <button class="enviar" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </section>
+                </form>
+            </div>
             </div>
         </div>
     </main>
