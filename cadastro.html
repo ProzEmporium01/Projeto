@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cadastro.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <title>EMPORIUM</title>
 </head>
 <body>
     <header>
-        <img id="logo" src="images/emporium" alt="logo Emporium">
+        <img id="logo" src="images/emporium-slim.jpg" alt="logo Emporium">
         <div>
             <li class="menu_header">
                 <ol><a class="menu_header_itens" href="index.html">Inicio</a></ol>
@@ -28,44 +28,37 @@
             </div>
             <div class="form_card">
             <div class="texto">
-                <h1> Cadastro </h1>
-                <form action="">
-                    <div class="form_inputs">
-                        <label for="nome"> Nome:</label>
-                        <input type="text" name="nome"  id="nome" placeholder="Digite seu nome...">
+                <form class="form" id="form">
+                    <h1> Cadastro </h1>
+                    <div class="form-control">
+                        <label for="username" class="">Nome</label>
+                        <input type="text" id="nome">
+                        <i class="img-success" ><img src="images/success.svg" alt=""></i>
+                        <i class="img-error" ><img src="images/error-icon.svg" alt=""></i>
+                        <small>Error Message</small>
                     </div>
-                    <div class="form_inputs">
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="Digite seu email...">
+                    <div class="form-control">
+                        <label>Email</label>
+                        <input type="email" id="email">
+                        <i class="img-success" ><img src="images/success.svg" alt=""></i>
+                        <i class="img-error" ><img src="images/error-icon.svg" alt=""></i>
+                        <small>Error Message</small>
                     </div>
-                    <div class="form_inputs">
-                        <label for="watsapp">CPF:</label>
-                        <input type="tel" name="CPF" id="CPF" placeholder="Digite o CPF...">
+                    <div class="form-control">
+                        <label>Senha</label>
+                        <input type="password" id="senha">
+                        <i class="img-success" ><img src="images/success.svg" alt=""></i>
+                        <i class="img-error" ><img src="images/error-icon.svg" alt=""></i>
+                        <small>Error Message</small>
                     </div>
-                    <div class="form_inputs">
-                        <label for="telefone">Data de Nascimeto:</label>
-                        <input type="data" name="data de nascimento" id="data de nascimento" placeholder="Digite Data de Nascimento...">
+                    <div class="form-control">
+                        <label>Confirme sua senha</label>
+                        <input type="password" id="senha_conf">
+                        <i class="img-success" ><img src="images/success.svg" alt=""></i>
+                        <i class="img-error" ><img src="images/error-icon.svg" alt=""></i>
+                        <small>Error Message</small>
                     </div>
-                    <div class="form_inputs">
-                        <label for="mensagem">Endereço:</label>
-                        <textarea name="Endereço" id="Endereço" rows="2" cols="34" placeholder="Digite seu Endereço..."></textarea>
-                    </div>
-                    
-                    <section>
-                        <div style="padding: 10px;">
-                            
-                            <input type="radio" name="contact" id="whatsapp"
-                            value="watsapp">
-                            <label for="brasil">Pessoa Júridica</label>
-                            <input type="radio" name="contact" id="telefone"
-                            value="telefone">
-                            <label for="brasil">Pessoa Física</label>
-                            
-                            <div id="enviar_contato">
-                                <button class="enviar" type="submit">Enviar</button>
-                            </div>
-                        </div>
-                    </section>
+                    <button type="submit">Enviar</button>
                 </form>
             </div>
             </div>
@@ -78,4 +71,5 @@
     </footer>
 
 </body>
+<script src="cadastro.js"></script>
 </html>

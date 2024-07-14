@@ -6,8 +6,8 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-
 }
+
 header{
     background-color: #454249;
     display: flex;
@@ -29,7 +29,6 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #454249;
     font-weight: 500;
-
 }
 
 main{
@@ -51,7 +50,10 @@ footer{
     width: 100%;
     height: 34px;
     align-items: center;
+}
 
+h6 {
+    color: #ff0066;
 }
 
 .menu_header{
@@ -114,13 +116,17 @@ footer{
 }
 
 .form_login{
-    
-    width: 200px;
-    height: 50px;
-    margin: 10px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     padding: 20px;
+ }
+
+ .form_label {
+    font-size: 14px;
+    font-weight: 800;
  }
 
 .cadastre{
@@ -212,6 +218,12 @@ footer{
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
 }
 
+.enviar:hover {
+    background-color: #c4975d;
+    transition: 0.3s;
+    color: #ffffff;
+}
+
 .form_inputs {
     display: flex;
     flex-direction: column;
@@ -226,4 +238,68 @@ footer{
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.7);
     width: 100%; 
     max-width: 600px;
+}
+
+.estilo {
+    border: 2px solid #454249;
+    border-radius: 5px;
+    outline: 0;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.container-slide{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+    height: 50vh;
+    background-color: black;
+    margin: 20vh auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px black;
+    border: 5px solid black;
+}
+
+.container-items {
+    position: absolute;
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item {
+    width: 50vw;
+    height: 50vh;
+    transition: all 1s;
+}
+.item:first-child{
+    margin-left: -100%;
+}
+
+.item img {
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+.action-button{
+    font: bold 30px sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    color: #00000000;
+    user-select: none;
+    z-index: 1;
+}
+.action-button:hover{
+    color: white;
+    background-color: #00000055;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;
 }
