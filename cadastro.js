@@ -40,7 +40,7 @@ function checkInputs() {
       setErrorFor(username, 'Preencha esse campo')
 
     } else if(username.value.length < 5) { 
-      setErrorFor(username, 'Usuário deve ter mais que 5 caracteres')
+      setErrorFor(username, 'Pelo menos 5 caracteres')
 
     } else {
       // adicionar a classe de sucesso
@@ -107,3 +107,4 @@ form.addEventListener('submit', (e) => {
   e.preventDefault()
   checkInputs()
 })
+
