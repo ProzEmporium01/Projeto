@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <title>EMPORIUM</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/emporium-slim.jpg" alt="logo Emporium">
+        <div>
+            <li class="menu_header">
+                <ol><a class="menu_header_itens" href="index.html">Início</a></ol>
+                <ol><a class="menu_header_itens" href="tipos.html">Tipos</a></ol>
+                <ol><a class="menu_header_itens" href="sobre.html">Sobre</a></ol>
+                <ol><a class="menu_header_itens" href="contato.html">Contato</a></ol>
+                <ol><a class="menu_header_itens" href="login.html">Login</a></ol>
+            </li>
+        </div>
+    </header>
+
+    <main>
+        <div class="corpo">
+            <div>
+                <img class="logo_slim" src="images/emporium-slim.jpg" alt="Logo Emporium">
+            </div>
+            <div class="texto form_card">
+                <h1> Login</h1>
+                <div>
+                    <form>
+                        <div class="form_login">
+                            <label for="username">Usuário:</label>
+                            <input 
+                                type="text"
+                                id="usuario"
+                                placeholder="Digite seu Usuário..." required>
+                        </div>
+                        <div class="form_login">
+                            <label for="password"> Senha </label>
+                            <input 
+                                type="password"
+                                id="senha"
+                                placeholder="Digite sua Senha"required>
+                        </div>
+                        <div class="form_login">
+                            <button class="enviar" type="submit">Enviar</button>
+                        </div>
+                        <div class="form_login">
+                            <a class="cadastre" href="cadastro.html">Cadastre-se</Cadastre-se></a>
+                        </div>
+                    </form>
+                </div>
+                <script>
+                        document.querySelector('form').addEventListener('submit', (e) => {
+                            e.preventDefault();
+                            alert("login feito com sucesso")
+                        })
+                </script>
+                
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div><a class="footer_texto" href="htpps://www.instagran.com">Instagran</a></div>
+        <div><a class="footer_texto" href="htpps://www.facebook.com">Facebook</a></div>
+    </footer>
+
+</body>
+</html>

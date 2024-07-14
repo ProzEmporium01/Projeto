@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <title>EMPORIUM</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/emporium-slim.jpg" alt="logo Emporium">
+        <div>
+            <li class="menu_header">
+                <ol><a class="menu_header_itens" href="index.html">Inicio</a></ol>
+                <ol><a class="menu_header_itens" href="tipos.html">Tipos</a></ol>
+                <ol><a class="menu_header_itens" href="sobre.html">Sobre</a></ol>
+                <ol><a class="menu_header_itens" href="contato.html">Contato</a></ol>
+                <ol><a class="menu_header_itens" href="login.html">Login</a></ol>
+            </li>
+        </div>
+    </header>
+
+    <main>
+        <div class="corpo">
+            <div>
+                <img class="logo_slim" src="images/emporium-slim.jpg" alt="Logo Emporium">
+            </div>
+            <div class="form_card">
+            <div class="texto">
+                <h1> Contato </h1>
+                <form action="">
+                    <div class="form_inputs">
+                        <label for="nome"> Nome:</label>
+                        <input type="text" name="nome"  id="nome" placeholder="Digite seu nome...">
+                    </div>
+                    <div class="form_inputs">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu email...">
+                    </div>
+                    <div class="form_inputs">
+                        <label for="watsapp">Watsapp:</label>
+                        <input type="tel" name="watsapp" id="watsapp" placeholder="Seu numero do Whatsapp...">
+                    </div>
+                    <div class="form_inputs">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="Seu numero de telefone...">
+                    </div>
+                    <div class="form_inputs">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" rows="5" cols="34" placeholder="Digite uma mensagem..."></textarea>
+                    </div>
+                    
+                    <section>
+                        <div style="padding: 10px;">
+                            <p>Melhor contato</p>
+                            <input type="radio" name="contact" id="whatsapp"
+                            value="watsapp">
+                            <label for="brasil">Whatsapp</label>
+                            <input type="radio" name="contact" id="telefone"
+                            value="telefone">
+                            <label for="brasil">Telefone</label>
+                            <input type="radio" name="contact" id="email"
+                            value="email">
+                            <label for="brasil">Email</label>
+                            <div id="enviar_contato">
+                                <button class="enviar" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </section>
+                </form>
+            </div>
+            </div>
+        </div>
+
+        <script>
+                var form = document.querySelector('form');
+                    form.addEventListener('submit', function(event) {
+                    event.preventDefault()
+                    alert('Enviado com sucesso!')
+                    form.reset();
+                });
+            
+        </script>
+    </main>
+
+
+    <footer>
+        <div><a class="footer_texto" href="htpps://www.instagran.com">Instagran</a></div>
+        <div><a class="footer_texto" href="htpps://www.facebook.com">Facebook</a></div>
+    </footer>
+
+</body>
+</html>

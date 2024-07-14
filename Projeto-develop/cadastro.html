@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <title>EMPORIUM</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/emporium-slim.jpg" alt="logo Emporium">
+        <nav>
+            <ul class="menu_header">
+                <li><a class="menu_header_itens" href="index.html">Início</a></li>
+                <li><a class="menu_header_itens" href="tipos.html">Tipos</a></li>
+                <li><a class="menu_header_itens" href="sobre.html">Sobre</a></li>
+                <li><a class="menu_header_itens" href="contato.html">Contato</a></li>
+                <li><a class="menu_header_itens" href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="corpo">
+            <div>
+                <img class="logo_slim" src="images/emporium-slim.jpg" alt="Logo Emporium">
+            </div>
+            <div class="form_card">
+                <div class="texto">
+                    <h1>Cadastro</h1>
+                    <form id="formCadastro">
+
+                        <div class="form_inputs">
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" placeholder="Digite seu nome..." required>
+                        </div>
+                        <div class="form_inputs">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu email..." required>
+                        </div>
+                        <div class="form_inputs">
+                            <label for="senha">Senha:</label>
+                            <input type="password" name="senha" id="senha" placeholder="Digite sua senha..." required>
+                        </div>
+                        <div class="form_inputs">
+                            <label for="confirmarSenha">Digite a Senha Novamente:</label>
+                            <input type="password" name="confirmarSenha" id="confirmarSenha" placeholder="Digite sua senha novamente..." required>
+                        </div>
+                        <div class="form_inputs">
+                            <label for="comentarios">Comentários:</label>
+                            <textarea name="comentarios" id="comentarios" rows="2" cols="34" placeholder="Digite seus comentários..." required></textarea>
+                        </div>
+                        
+                        <section>
+                            <div></div>
+                                <input type="radio" name="contact" id="pessoaJuridica" value="pessoaJuridica">
+                                <label for="pessoaJuridica">Pessoa Jurídica</label>
+                                <input type="radio" name="contact" id="pessoaFisica" value="pessoaFisica">
+                                <label for="pessoaFisica">Pessoa Física</label>
+                                
+                                <div id="enviar_contato">
+                                    <button class="enviar" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </section>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div><a class="footer_texto" href="https://www.instagram.com">Instagram</a></div>
+        <div><a class="footer_texto" href="https://www.facebook.com">Facebook</a></div>
+    </footer>
+
+</body>
+</html>
