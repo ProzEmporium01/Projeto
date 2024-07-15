@@ -50,7 +50,8 @@ function checkInputs() {
 
   })
 
-   
+ 
+  
   //Validação EMAIL
   email.addEventListener("blur", function() {
     //console.log("email")
@@ -103,6 +104,7 @@ function checkInputs() {
     }
   })
 }
+
 function confere(){
   if (cadastro > 3){
     alert("Cadastro concluído !")
@@ -119,5 +121,3 @@ form.addEventListener('submit', (e) => {
   checkInputs()
   confere()
   })
-
-
