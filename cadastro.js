@@ -4,6 +4,7 @@ const username = document.getElementById('nome')
 const email = document.getElementById('email')
 const senha = document.getElementById('senha')
 const senha_conf = document.getElementById('senha_conf')
+let cadastro = 0
 
 //addEventListener = permite que você configure funções a serem chamadas quando um evento específico acontece, como, por exemplo, quando um usuário clica em um botão.
 //preventDefault = evitar as ações padrão que normalmente ocorrem quando certos eventos são acionados, a principal razão do uso do preventDefault é impedir que os eventos sejam propagados pelos elementos do DOM, evitando que eles sejam manipulados por outros elementos. Ao utilizar essa função, é possível evitar que ações indesejadas sejam executadas, como redirecionamentos de página ou abertura de links.
@@ -21,8 +22,8 @@ function setErrorFor(input, message) {
 
 function setSuccessFor(input) {
   const formControl = input.parentElement;
-
   formControl.className = 'form-control success'
+  return cadastro = cadastro + 1
 }
 
 function isEmail(email) {
@@ -48,6 +49,9 @@ function checkInputs() {
     }
 
   })
+
+ 
+  
   //Validação EMAIL
   email.addEventListener("blur", function() {
     //console.log("email")
@@ -75,7 +79,7 @@ function checkInputs() {
       setErrorFor(senha, 'Preencha esse campo')
 
     } else if(senha.value.length < 6) { 
-      setErrorFor(senha, 'Senha deve ter no mínimo 6 caracteres')
+      setErrorFor(senha, 'No mínimo 6 caracteres')
     } else {
 
       // adicionar a classe de sucesso
@@ -101,10 +105,21 @@ function checkInputs() {
   })
 }
 
+function confere(){
+  if (cadastro > 3){
+    alert("Cadastro concluído !")
+  }else {
+    alert("Cadastro inválido...")
+  }
+  cadastro = 0
+}
+
 
 checkInputs()
 form.addEventListener('submit', (e) => {
   e.preventDefault()
   checkInputs()
-})
+  confere()
+  })
+
 
