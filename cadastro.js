@@ -106,5 +106,6 @@ checkInputs()
 form.addEventListener('submit', (e) => {
   e.preventDefault()
   checkInputs()
+  alert(`Cadastro enviado`)
 })
 
