@@ -14,9 +14,7 @@ let cadastro = 0
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
   const small = formControl.querySelector('small')
-
   small.innerText = message
-
   formControl.className = 'form-control error'
 }
 
