@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cadastro.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <script src="contato.js" defer ></script>
     <title>EMPORIUM</title>
 </head>
 <body>
@@ -28,46 +29,37 @@
             </div>
             <div class="form_card">
             <div class="texto">
-                <h1> Contato </h1>
-                <form action="">
-                    <div class="form_inputs">
-                        <label for="nome" class="form_label"> Nome:</label>
-                        <input class="estilo" type="text" name="nome"  id="nome" placeholder="Digite seu nome...">
+                <form class="form" id="form">
+                    <h1> Contato </h1>
+                    <div class="form-control">
+                        <label for="username" class="">Nome</label>
+                        <input type="text" id="nome">
+                        <i class="img-success" ><img src="images/success.svg" alt=""></i>
+                        <i class="img-error" ><img src="images/error-icon.svg" alt=""></i>
+                        <small>Error Message</small>
                     </div>
-                    <div class="form_inputs">
-                        <label for="email" class="form_label">Email:</label>
-                        <input class="estilo" type="email" name="email" id="email" placeholder="Digite seu email...">
+                    <div class="form-control">
+                        <label>Email</label>
+                        <input type="email" id="email">
+                        <i class="img-success" ><img src="images/success.svg" alt=""></i>
+                        <i class="img-error" ><img src="images/error-icon.svg" alt=""></i>
+                        <small>Error Message</small>
                     </div>
-                    <div class="form_inputs">
-                        <label for="watsapp" class="form_label">Watsapp:</label>
-                        <input class="estilo" type="tel" name="watsapp" id="watsapp" placeholder="Seu numero do Whatsapp...">
+                    <div class="form-control">
+                        <label>Telefone</label>
+                        <input type="text" id="telefone">
+                        <i class="img-success" ><img src="images/success.svg" alt=""></i>
+                        <i class="img-error" ><img src="images/error-icon.svg" alt=""></i>
+                        <small>Error Message</small>
                     </div>
-                    <div class="form_inputs">
-                        <label for="telefone" class="form_label">Telefone:</label>
-                        <input class="estilo" type="tel" name="telefone" id="telefone" placeholder="Seu numero de telefone...">
+                    <div class="form-control">
+                        <label>Texto</label>
+                        <textarea  id="mensagem"></textarea>
+                        <i class="img-success" ><img src="images/success.svg" alt=""></i>
+                        <i class="img-error" ><img src="images/error-icon.svg" alt=""></i>
+                        <small>Error Message</small>
                     </div>
-                    <div class="form_inputs">
-                        <label for="mensagem" class="form_label">Mensagem:</label>
-                        <textarea class="estilo" name="mensagem" id="mensagem" rows="5" cols="34" placeholder="Digite uma mensagem..."></textarea>
-                    </div>
-                    
-                    <section>
-                        <div style="padding: 10px;">
-                            <p class="form_label">Melhor contato</p>
-                            <input type="radio" name="contact" id="whatsapp"
-                            value="watsapp">
-                            <label class="form_label" for="brasil">Whatsapp</label>
-                            <input type="radio" name="contact" id="telefone"
-                            value="telefone">
-                            <label class="form_label" for="brasil">Telefone</label>
-                            <input type="radio" name="contact" id="email"
-                            value="email">
-                            <label class="form_label" for="brasil">Email</label>
-                            <div id="enviar_contato">
-                                <button class="enviar" type="submit">Enviar</button>
-                            </div>
-                        </div>
-                    </section>
+                    <button type="submit">Enviar</button>
                 </form>
             </div>
             </div>

@@ -151,26 +151,6 @@ h6 {
     background-color: #fae4ed;
 }
 
-.form-control textarea {
-    border: 2px solid #454249;
-    border-radius: 5px;
-    outline: 0;
-    display: block;
-    font-size: 14px;
-    width: 100%;
-    padding: 10px;
-}
-
-.form-control.success textarea {
-    border: 3px solid #55dd55;
-    background-color: #d1ffd1;
-}
-
-.form-control.error textarea {
-    border: 3px solid #ff0066;
-    background-color: #fae4ed;
-}
-
 .form-control.error i.img-error {
     visibility: visible;
 }
