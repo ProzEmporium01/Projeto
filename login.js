@@ -10,7 +10,7 @@ form.addEventListener("submit", (e) => {
     if (user != "monica" && user != "tulio" && user != "alvaro" && user !="wander") {
         resposta1.innerText = `ERRO: Senha ou Usuário Incorretos`
     } else {
-        console.log(senha)
+        console.log(senha) .addEventListener
         if (senha == "123456"){
             resposta1.innerText = ""
             alert(`Bem-vindo, ${user}`)
